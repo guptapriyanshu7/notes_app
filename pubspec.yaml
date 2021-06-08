@@ -23,17 +23,24 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  another_flushbar: ^1.10.23
   cupertino_icons: ^1.0.2
   dartz: ^0.10.0-nullsafety.2
   equatable: ^2.0.2
+  firebase_auth: ^1.3.0
+  firebase_core: ^1.2.1
   flutter_bloc: ^7.0.1
   freezed_annotation: ^0.14.2
+  get_it: ^7.1.3
+  google_sign_in: ^5.0.4
+  injectable: ^1.4.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   build_runner: ^2.0.4
   freezed: ^0.14.2
+  injectable_generator: ^1.4.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
