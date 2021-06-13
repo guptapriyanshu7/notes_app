@@ -46,7 +46,7 @@ class NoteColor extends ValueObject<Color> {
     Color(0xfffffdd0), // cream
   ];
   factory NoteColor(Color input) {
-    return NoteColor._(Right(makeColorOpaque(input)));
+    return NoteColor._(right(makeColorOpaque(input)));
   }
   const NoteColor._(this.value);
 }

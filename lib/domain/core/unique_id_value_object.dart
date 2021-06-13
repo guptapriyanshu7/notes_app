@@ -9,11 +9,11 @@ class UniqueId extends ValueObject<String> {
 
   factory UniqueId() {
     final String uniqueId = Uuid().v4();
-    return UniqueId._(Right(uniqueId));
+    return UniqueId._(right(uniqueId));
   }
 
   factory UniqueId.fromUniqueString(String uniqueId) {
-    return UniqueId._(Right(uniqueId));
+    return UniqueId._(right(uniqueId));
   }
 
   const UniqueId._(this.value);
