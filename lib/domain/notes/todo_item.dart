@@ -23,6 +23,6 @@ class TodoItem with _$TodoItem {
       );
 
   Option<ValueFailure<dynamic>> get failureOption {
-    return name.value.fold((f) => Some(f), (_) => None());
+    return name.value.fold((f) => some(f), (_) => none());
   }
 }

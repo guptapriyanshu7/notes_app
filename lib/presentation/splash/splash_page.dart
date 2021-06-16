@@ -14,9 +14,7 @@ class SplashPage extends StatelessWidget {
         state.map(
           initial: (_) {},
           unauthenticated: (_) => context.replaceRoute(SignInRoute()),
-          authenticated: (_) {
-            print('Authenticated');
-          },
+          authenticated: (_) => context.replaceRoute(NotesOverviewRoute()),
         );
       },
       child: Scaffold(

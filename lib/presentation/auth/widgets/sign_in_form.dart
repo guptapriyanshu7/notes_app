@@ -1,7 +1,10 @@
 import 'package:another_flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:notes_app/application/auth/auth_bloc.dart';
 import 'package:notes_app/application/auth/sign_in_form/sign_in_form_bloc.dart';
+import 'package:notes_app/presentation/routes/router.gr.dart';
+import 'package:auto_route/auto_route.dart';
 
 class SignInForm extends StatelessWidget {
   const SignInForm({Key? key}) : super(key: key);
@@ -24,14 +27,19 @@ class SignInForm extends StatelessWidget {
                 ),
               ).show(context);
             },
-            (_) {},
+            (_) {
+              context.replaceRoute(NotesOverviewRoute());
+              context
+                  .read<AuthBloc>()
+                  .add(const AuthEvent.authCheckRequested());
+            },
           ),
         );
       },
       builder: (context, state) {
         final signInFormBloc = context.read<SignInFormBloc>();
-        final currentFocus = FocusScope.of(context);
         // or BlocProvider.of<SignInFormBloc>(context);
+        final currentFocus = FocusScope.of(context);
         return Form(
           autovalidateMode: state.showErrorMessages
               ? AutovalidateMode.always

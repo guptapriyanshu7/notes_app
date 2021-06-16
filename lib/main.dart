@@ -28,7 +28,9 @@ class MyApp extends StatelessWidget {
         routerDelegate: _router.delegate(),
         title: 'Notes App',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData.dark().copyWith(
+        theme: ThemeData
+            // .dark().copyWith
+            (
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets.all(12),
@@ -44,6 +46,9 @@ class MyApp extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
             ),
           ),
+          floatingActionButtonTheme: FloatingActionButtonThemeData(
+              // backgroundColor: Colors.blue[900],
+              ),
         ),
       ),
     );

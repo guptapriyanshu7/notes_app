@@ -39,6 +39,6 @@ class Note with _$Note {
               .getOrElse(0, (_) => none())
               .fold(() => right(unit), (f) => left(f)),
         )
-        .fold((f) => Some(f), (_) => None());
+        .fold((f) => some(f), (_) => none());
   }
 }

@@ -49,11 +49,11 @@ class NoteDto with _$NoteDto {
           .copyWith(id: doc.id);
 }
 
-class ServerTimestampConverter implements JsonConverter<FieldValue, Object> {
+class ServerTimestampConverter implements JsonConverter<FieldValue, Object?> {
   const ServerTimestampConverter();
 
   @override
-  FieldValue fromJson(Object json) {
+  FieldValue fromJson(Object? json) {
     return FieldValue.serverTimestamp();
   }
 

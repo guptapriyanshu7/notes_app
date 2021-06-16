@@ -27,6 +27,10 @@ class _$NoteFailureTearOff {
   _UnableToUpdate unableToUpdate() {
     return const _UnableToUpdate();
   }
+
+  _UnableToDelete unableToDelete() {
+    return const _UnableToDelete();
+  }
 }
 
 /// @nodoc
@@ -39,6 +43,7 @@ mixin _$NoteFailure {
     required TResult Function() unexpected,
     required TResult Function() insufficientPermission,
     required TResult Function() unableToUpdate,
+    required TResult Function() unableToDelete,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -46,6 +51,7 @@ mixin _$NoteFailure {
     TResult Function()? unexpected,
     TResult Function()? insufficientPermission,
     TResult Function()? unableToUpdate,
+    TResult Function()? unableToDelete,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -55,6 +61,7 @@ mixin _$NoteFailure {
     required TResult Function(_InsufficientPermission value)
         insufficientPermission,
     required TResult Function(_UnableToUpdate value) unableToUpdate,
+    required TResult Function(_UnableToDelete value) unableToDelete,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -62,6 +69,7 @@ mixin _$NoteFailure {
     TResult Function(_Unexpected value)? unexpected,
     TResult Function(_InsufficientPermission value)? insufficientPermission,
     TResult Function(_UnableToUpdate value)? unableToUpdate,
+    TResult Function(_UnableToDelete value)? unableToDelete,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -125,6 +133,7 @@ class _$_Unexpected implements _Unexpected {
     required TResult Function() unexpected,
     required TResult Function() insufficientPermission,
     required TResult Function() unableToUpdate,
+    required TResult Function() unableToDelete,
   }) {
     return unexpected();
   }
@@ -135,6 +144,7 @@ class _$_Unexpected implements _Unexpected {
     TResult Function()? unexpected,
     TResult Function()? insufficientPermission,
     TResult Function()? unableToUpdate,
+    TResult Function()? unableToDelete,
     required TResult orElse(),
   }) {
     if (unexpected != null) {
@@ -150,6 +160,7 @@ class _$_Unexpected implements _Unexpected {
     required TResult Function(_InsufficientPermission value)
         insufficientPermission,
     required TResult Function(_UnableToUpdate value) unableToUpdate,
+    required TResult Function(_UnableToDelete value) unableToDelete,
   }) {
     return unexpected(this);
   }
@@ -160,6 +171,7 @@ class _$_Unexpected implements _Unexpected {
     TResult Function(_Unexpected value)? unexpected,
     TResult Function(_InsufficientPermission value)? insufficientPermission,
     TResult Function(_UnableToUpdate value)? unableToUpdate,
+    TResult Function(_UnableToDelete value)? unableToDelete,
     required TResult orElse(),
   }) {
     if (unexpected != null) {
@@ -216,6 +228,7 @@ class _$_InsufficientPermission implements _InsufficientPermission {
     required TResult Function() unexpected,
     required TResult Function() insufficientPermission,
     required TResult Function() unableToUpdate,
+    required TResult Function() unableToDelete,
   }) {
     return insufficientPermission();
   }
@@ -226,6 +239,7 @@ class _$_InsufficientPermission implements _InsufficientPermission {
     TResult Function()? unexpected,
     TResult Function()? insufficientPermission,
     TResult Function()? unableToUpdate,
+    TResult Function()? unableToDelete,
     required TResult orElse(),
   }) {
     if (insufficientPermission != null) {
@@ -241,6 +255,7 @@ class _$_InsufficientPermission implements _InsufficientPermission {
     required TResult Function(_InsufficientPermission value)
         insufficientPermission,
     required TResult Function(_UnableToUpdate value) unableToUpdate,
+    required TResult Function(_UnableToDelete value) unableToDelete,
   }) {
     return insufficientPermission(this);
   }
@@ -251,6 +266,7 @@ class _$_InsufficientPermission implements _InsufficientPermission {
     TResult Function(_Unexpected value)? unexpected,
     TResult Function(_InsufficientPermission value)? insufficientPermission,
     TResult Function(_UnableToUpdate value)? unableToUpdate,
+    TResult Function(_UnableToDelete value)? unableToDelete,
     required TResult orElse(),
   }) {
     if (insufficientPermission != null) {
@@ -307,6 +323,7 @@ class _$_UnableToUpdate implements _UnableToUpdate {
     required TResult Function() unexpected,
     required TResult Function() insufficientPermission,
     required TResult Function() unableToUpdate,
+    required TResult Function() unableToDelete,
   }) {
     return unableToUpdate();
   }
@@ -317,6 +334,7 @@ class _$_UnableToUpdate implements _UnableToUpdate {
     TResult Function()? unexpected,
     TResult Function()? insufficientPermission,
     TResult Function()? unableToUpdate,
+    TResult Function()? unableToDelete,
     required TResult orElse(),
   }) {
     if (unableToUpdate != null) {
@@ -332,6 +350,7 @@ class _$_UnableToUpdate implements _UnableToUpdate {
     required TResult Function(_InsufficientPermission value)
         insufficientPermission,
     required TResult Function(_UnableToUpdate value) unableToUpdate,
+    required TResult Function(_UnableToDelete value) unableToDelete,
   }) {
     return unableToUpdate(this);
   }
@@ -342,6 +361,7 @@ class _$_UnableToUpdate implements _UnableToUpdate {
     TResult Function(_Unexpected value)? unexpected,
     TResult Function(_InsufficientPermission value)? insufficientPermission,
     TResult Function(_UnableToUpdate value)? unableToUpdate,
+    TResult Function(_UnableToDelete value)? unableToDelete,
     required TResult orElse(),
   }) {
     if (unableToUpdate != null) {
@@ -353,4 +373,99 @@ class _$_UnableToUpdate implements _UnableToUpdate {
 
 abstract class _UnableToUpdate implements NoteFailure {
   const factory _UnableToUpdate() = _$_UnableToUpdate;
+}
+
+/// @nodoc
+abstract class _$UnableToDeleteCopyWith<$Res> {
+  factory _$UnableToDeleteCopyWith(
+          _UnableToDelete value, $Res Function(_UnableToDelete) then) =
+      __$UnableToDeleteCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$UnableToDeleteCopyWithImpl<$Res>
+    extends _$NoteFailureCopyWithImpl<$Res>
+    implements _$UnableToDeleteCopyWith<$Res> {
+  __$UnableToDeleteCopyWithImpl(
+      _UnableToDelete _value, $Res Function(_UnableToDelete) _then)
+      : super(_value, (v) => _then(v as _UnableToDelete));
+
+  @override
+  _UnableToDelete get _value => super._value as _UnableToDelete;
+}
+
+/// @nodoc
+
+class _$_UnableToDelete implements _UnableToDelete {
+  const _$_UnableToDelete();
+
+  @override
+  String toString() {
+    return 'NoteFailure.unableToDelete()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _UnableToDelete);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() unexpected,
+    required TResult Function() insufficientPermission,
+    required TResult Function() unableToUpdate,
+    required TResult Function() unableToDelete,
+  }) {
+    return unableToDelete();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? unexpected,
+    TResult Function()? insufficientPermission,
+    TResult Function()? unableToUpdate,
+    TResult Function()? unableToDelete,
+    required TResult orElse(),
+  }) {
+    if (unableToDelete != null) {
+      return unableToDelete();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Unexpected value) unexpected,
+    required TResult Function(_InsufficientPermission value)
+        insufficientPermission,
+    required TResult Function(_UnableToUpdate value) unableToUpdate,
+    required TResult Function(_UnableToDelete value) unableToDelete,
+  }) {
+    return unableToDelete(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Unexpected value)? unexpected,
+    TResult Function(_InsufficientPermission value)? insufficientPermission,
+    TResult Function(_UnableToUpdate value)? unableToUpdate,
+    TResult Function(_UnableToDelete value)? unableToDelete,
+    required TResult orElse(),
+  }) {
+    if (unableToDelete != null) {
+      return unableToDelete(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _UnableToDelete implements NoteFailure {
+  const factory _UnableToDelete() = _$_UnableToDelete;
 }
