@@ -314,6 +314,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.17.0"
+  flutter_slidable:
+    dependency: "direct main"
+    description:
+      name: flutter_slidable
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.6.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -401,6 +408,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.0"
+  implicitly_animated_reorderable_list:
+    dependency: "direct main"
+    description:
+      name: implicitly_animated_reorderable_list
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.4.0"
   injectable:
     dependency: "direct main"
     description:
@@ -528,7 +542,7 @@ packages:
     source: hosted
     version: "1.5.0"
   provider:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: provider
       url: "https://pub.dartlang.org"

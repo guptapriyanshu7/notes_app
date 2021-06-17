@@ -6,6 +6,7 @@ part of 'note_dtos.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
+// ignore: non_constant_identifier_names
 _$_NoteDto _$_$_NoteDtoFromJson(Map<String, dynamic> json) {
   return _$_NoteDto(
     body: json['body'] as String,
@@ -18,15 +19,17 @@ _$_NoteDto _$_$_NoteDtoFromJson(Map<String, dynamic> json) {
   );
 }
 
+// ignore: non_constant_identifier_names
 Map<String, dynamic> _$_$_NoteDtoToJson(_$_NoteDto instance) =>
     <String, dynamic>{
       'body': instance.body,
       'color': instance.color,
-      'todos': instance.todos,
+      'todos': instance.todos.map((e) => e.toJson()).toList(),
       'serverTimeStamp':
           const ServerTimestampConverter().toJson(instance.serverTimeStamp),
     };
 
+// ignore: non_constant_identifier_names
 _$_TodoItemDto _$_$_TodoItemDtoFromJson(Map<String, dynamic> json) {
   return _$_TodoItemDto(
     id: json['id'] as String,
@@ -35,6 +38,7 @@ _$_TodoItemDto _$_$_TodoItemDtoFromJson(Map<String, dynamic> json) {
   );
 }
 
+// ignore: non_constant_identifier_names
 Map<String, dynamic> _$_$_TodoItemDtoToJson(_$_TodoItemDto instance) =>
     <String, dynamic>{
       'id': instance.id,

@@ -8,20 +8,23 @@ class ErrorNoteCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: Column(
-        children: [
-          Text(
-            'Invalid note, please, contact support',
-            style: Theme.of(context)
-                .primaryTextTheme
-                .bodyText2!
-                .copyWith(fontSize: 18),
-          ),
-          Text(
-            note.failureOption.fold(() => '', (f) => f.toString()),
-            style: Theme.of(context).primaryTextTheme.bodyText2,
-          ),
-        ],
+      color: Theme.of(context).errorColor.withOpacity(0.8),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            Text(
+              'Invalid note, please, contact support',
+            ),
+            const SizedBox(height: 2),
+            Text(
+              'Details for nerds:',
+            ),
+            Text(
+              note.failureOption.fold(() => '', (f) => f.toString()),
+            ),
+          ],
+        ),
       ),
     );
   }

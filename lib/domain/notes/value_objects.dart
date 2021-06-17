@@ -42,7 +42,7 @@ class NoteColor extends ValueObject<Color> {
     Color(0xfffedc56), // mustard
     Color(0xffd0f0c0), // tea
     Color(0xfffca3b7), // flamingo
-    Color(0xff997950), // tortilla
+    Color(0xffd9ab71), // tortilla
     Color(0xfffffdd0), // cream
   ];
   factory NoteColor(Color input) {
@@ -59,6 +59,7 @@ class List3<T> extends ValueObject<KtList<T>> {
     return List3._(validateMaxListLength(input, maxLength));
   }
   const List3._(this.value);
+
   int get length {
     return value.getOrElse(() => emptyList()).size;
   }

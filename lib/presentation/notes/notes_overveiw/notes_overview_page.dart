@@ -43,7 +43,10 @@ class NotesOverviewPage extends StatelessWidget {
               UncompletedTodoSwitch(),
             ],
           ),
-          body: NotesOverviewBody(),
+          body: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 2.0),
+            child: NotesOverviewBody(),
+          ),
           floatingActionButton: FloatingActionButton(
             onPressed: () => context.pushRoute(NoteFormRoute()),
             child: Icon(Icons.add),
