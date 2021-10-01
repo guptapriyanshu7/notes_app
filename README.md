@@ -1,18 +1,16 @@
-# notes_app
+# Notes App
 
-A new Flutter project.
+> An application using Flutter to track daily activity and goals of users by taking notes and adding to-dos.
 
-![image](https://user-images.githubusercontent.com/60141300/135594125-8c18e4a0-463f-422f-bbbb-391275cde81d.png)
+<div align="center">
+<img  src="https://user-images.githubusercontent.com/60141300/135649898-3c95f451-0197-462b-bf94-8e843d9ca4ac.gif" width="300" height="600" />
+</div>
 
-## Getting Started
+## Architecture Overview 
 
-This project is a starting point for a Flutter application.
+<div align="center">
+  <img  src="https://user-images.githubusercontent.com/60141300/135594125-8c18e4a0-463f-422f-bbbb-391275cde81d.png" width="500" height="800" />
+</div>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## License
+This project is licensed under the MIT License, © 2021 Priyanshu Gupta. See [LICENSE](https://github.com/guptapriyanshu7/notes_app/blob/main/LICENSE) for more details.
